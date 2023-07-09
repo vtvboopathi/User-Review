@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="contain">
+        <h1>Customer Review</h1>
+        <div class="review">
+            <div id="slide">
+                <div class="card">
+                    <div class="profile">
+                        <img src="emma.webp">
+                        <div>
+                            <h3>Emma Stone</h3>
+                            <p>Spiderman</p>
+                        </div>
+                    </div>
+                   <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, natus ad. Amet quas iusto, voluptates fugit quos distinctio iste laudantium?</p>
+                   </div>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="blake.jpg">
+                        <div>
+                            <h3>Blake Lively</h3>
+                            <p>Green Lanthern</p>
+                        </div>
+                    </div>
+                   <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, natus ad. Amet quas iusto, voluptates fugit quos distinctio iste laudantium?</p>
+                   </div>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="jenni.jpg">
+                        <div>
+                            <h3>Jennifer Aniston</h3>
+                            <p>FRIENDS</p>
+                        </div>
+                    </div>
+                   <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, natus ad. Amet quas iusto, voluptates fugit quos distinctio iste laudantium?</p>
+                   </div>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="watson.jpg">
+                        <div>
+                            <h3>Emma Watson</h3>
+                            <p>Harry Potter</p>
+                        </div>
+                    </div>
+                   <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, natus ad. Amet quas iusto, voluptates fugit quos distinctio iste laudantium?</p>
+                   </div>
+                </div>
+            </div>
+            <div class="slidebar">
+                <p id="up"><span class="material-symbols-outlined">
+                    arrow_upward
+                    </span></p>
+                <p id="down"><span class="material-symbols-outlined">
+                    arrow_downward
+                    </span></p>
+            </div>
+        </div>
+    </div>
+    <div class="vtv"><a href="https://github.com/vtvboopathi">vtv_boopathi</a></div>
+    
+<script>
+
+    let slide = document.getElementById('slide')
+    let down = document.getElementById("up")
+    let up = document.getElementById("down")
+
+    let x = 0
+
+    up.onclick = function() {
+        if( x > '-900'){
+            x = x - 300;
+            slide.style.top = x + 'px'
+        }
+    }
+ 
+    down.onclick = function() {
+        if( x < '0'){
+            x = x + 300;
+            slide.style.top = x + 'px'
+        }
+    }
+
+</script>
+</body>
+</html>
